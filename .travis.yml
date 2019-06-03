@@ -1,0 +1,3 @@
+language: R
+dist: xenial
+cache: packages
