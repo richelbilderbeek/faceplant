@@ -1,14 +1,20 @@
 Package: faceplant
-Title: What the Package Does (One Line, Title Case)
-Version: 0.0.0.9000
-Authors@R: 
-    person(given = "First",
-           family = "Last",
-           role = c("aut", "cre"),
-           email = "first.last@example.com",
-           comment = c(ORCID = "YOUR-ORCID-ID"))
-Description: What the package does (one paragraph).
-License: What license it uses
+Title: Stress-test Pirouette
+Version: 0.1
+Authors@R: c(
+    person("Richèl J.C.", "Bilderbeek", email = "richel@richelbilderbeek.nl", role = c("aut", "cre"), comment = c(ORCID = "0000-0003-1107-7049")))
+Description: 'pirouette' is an R package to measure the impact of a tree
+    prior in Bayesian phylogenetics. Testing this properly takes
+    quite some time. To speed up the 'pirouette' tests, harder
+    tests are moved to this repository.
+License: GPL-3 | file LICENSE
 Encoding: UTF-8
 LazyData: true
 RoxygenNote: 6.1.1
+Imports:
+    ape,
+    beastier,
+    testit
+Suggests: 
+    pirouette,
+    testthat (>= 2.1.0)
