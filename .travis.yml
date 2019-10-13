@@ -35,6 +35,7 @@ r_github_packages:
   - richelbilderbeek/nLTT
   - rsetienne/PBD/PBD
   - richelbilderbeek/becosys
+  - thijsjanzen/nodeSub
   - richelbilderbeek/pirouette
 
 before_install:
