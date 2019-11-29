@@ -138,7 +138,7 @@ test_that("most_evidence, two candidates", {
       mcmc = create_mcmc(chain_length = 2000, store_every = 1000)
     ),
     beast2_options = create_beast2_options(rng_seed = 314),
-    est_evidence_mcmc = create_nested_sampling_mcmc(epsilon = 100.0)
+    est_evidence_mcmc = create_ns_mcmc(epsilon = 100.0)
   )
   experiment_bd <- experiment_yule
   experiment_bd$inference_model$tree_prior <- create_bd_tree_prior()
@@ -215,7 +215,7 @@ test_that("generative and most_evidence, generative not in most_evidence", {
       mcmc = create_mcmc(chain_length = 3000, store_every = 1000)
     ),
     beast2_options = create_beast2_options(rng_seed = 314),
-    est_evidence_mcmc = create_nested_sampling_mcmc(epsilon = 100.0)
+    est_evidence_mcmc = create_ns_mcmc(epsilon = 100.0)
   )
   experiment_bd <- experiment_generative
   experiment_bd$inference_conditions$model_type <- "candidate"
@@ -281,7 +281,7 @@ test_that("generative and most_evidence, generative in most_evidence", {
       tree_prior = create_yule_tree_prior(),
       mcmc = create_mcmc(chain_length = 2000, store_every = 1000)
     ),
-    est_evidence_mcmc = create_nested_sampling_mcmc(epsilon = 100.0),
+    est_evidence_mcmc = create_ns_mcmc(epsilon = 100.0),
     beast2_options = create_beast2_options(rng_seed = 314)
   )
   experiment_bd <- experiment_generative
@@ -341,7 +341,7 @@ test_that("most_evidence, three candidates", {
       mcmc = create_mcmc(chain_length = 4000, store_every = 1000)
     ),
     beast2_options = create_beast2_options(rng_seed = 314),
-    est_evidence_mcmc = create_nested_sampling_mcmc(epsilon = 100.0)
+    est_evidence_mcmc = create_ns_mcmc(epsilon = 100.0)
   )
   experiment_hky <- experiment_jc69
   experiment_hky$inference_model$site_model <- create_hky_site_model()
@@ -417,7 +417,7 @@ test_that("most_evidence, four candidates", {
       mcmc = create_mcmc(chain_length = 4000, store_every = 1000)
     ),
     beast2_options = create_beast2_options(rng_seed = 314),
-    est_evidence_mcmc = create_nested_sampling_mcmc(epsilon = 100.0)
+    est_evidence_mcmc = create_ns_mcmc(epsilon = 100.0)
   )
   experiment_hky <- experiment_jc69
   experiment_hky$inference_model$site_model <- create_hky_site_model()
@@ -495,7 +495,7 @@ test_that("most_evidence, with twinning", {
       mcmc = create_mcmc(chain_length = 3000, store_every = 1000)
     ),
     beast2_options = beast2_options,
-    est_evidence_mcmc = create_nested_sampling_mcmc(epsilon = 100.0)
+    est_evidence_mcmc = create_ns_mcmc(epsilon = 100.0)
   )
   experiment_bd <- create_experiment(
     inference_conditions = create_inference_conditions(
@@ -508,7 +508,7 @@ test_that("most_evidence, with twinning", {
       mcmc = create_mcmc(chain_length = 3000, store_every = 1000)
     ),
     beast2_options = beast2_options,
-    est_evidence_mcmc = create_nested_sampling_mcmc(epsilon = 100.0)
+    est_evidence_mcmc = create_ns_mcmc(epsilon = 100.0)
   )
   experiments <- list(experiment_yule, experiment_bd)
 
