@@ -7,16 +7,11 @@ matrix:
   - r: release
     os: linux
 
-
 r_github_packages:
-  - richelbilderbeek/beastier
-  - richelbilderbeek/mauricer
-  - richelbilderbeek/babette
   - Giappo/mbd
   - jimhester/covr
   - jimhester/lintr
   - MangoTheCat/goodpractice
-  - richelbilderbeek/mcbette
   - rsetienne/PBD/PBD
   - richelbilderbeek/becosys
   - thijsjanzen/nodeSub
