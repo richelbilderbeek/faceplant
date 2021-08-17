@@ -9,7 +9,7 @@ matrix:
 
 r_github_packages:
   - Giappo/mbd
-  - jimhester/covr
+  - r-lib/covr
   - jimhester/lintr
   - MangoTheCat/goodpractice
   - rsetienne/PBD/PBD
